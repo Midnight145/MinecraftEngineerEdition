@@ -51,10 +51,17 @@ public class EngineerEditionClassTransformer implements IClassTransformer {
                     .append(edit.getValue())
                     .append("\n");
             }
-            throw new RuntimeException(
-                "EngineerEditionCore failed to find the following methods:\n" + str.toString()
-                    + "in class: "
-                    + editor.getClassName());
+            if (EngineerEditionCore.crashOnFail) {
+                throw new RuntimeException(
+                    "EngineerEditionCore failed to find the following methods:\n" + str
+                        + "in class: "
+                        + editor.getClassName());
+            } else {
+                EngineerEditionCore.logger.warn(
+                    "EngineerEditionCore failed to find the following methods:\n{}in class: {}",
+                    str,
+                    editor.getClassName());
+            }
         }
 
         ClassWriter writer = new ClassWriter(ClassWriter.COMPUTE_MAXS);

@@ -9,6 +9,9 @@ import java.util.Set;
 
 import net.minecraftforge.common.config.Configuration;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.gtnewhorizon.gtnhmixins.IEarlyMixinLoader;
 import com.midnight.engineeredition.coremod.asm.BlockDaylightDetectorTransformer;
 import com.midnight.engineeredition.coremod.asm.BlockFluidBaseTransformer;
@@ -104,7 +107,11 @@ public class EngineerEditionCore extends DummyModContainer implements IEarlyMixi
     public static List<IAsmEditor> editors = new ArrayList<>();
     public static boolean isObfuscated = false;
 
+    public static Logger logger = LogManager.getLogger(EngineerEditionCore.MODID);
+
     private static final ModMetadata modMetadata = new ModMetadata();
+    public static boolean crashOnFail = false;
+
     static {
         modMetadata.modId = MODID;
         modMetadata.name = MODID;
@@ -117,6 +124,7 @@ public class EngineerEditionCore extends DummyModContainer implements IEarlyMixi
             .toString();
         Configuration configuration = new Configuration(new File(path));
         PI = configuration.getFloat("PI", "main", 3.0f, -Float.MAX_VALUE, Float.MAX_VALUE, "");
+        crashOnFail = configuration.getBoolean("crashOnFail", "main", false, "");
         if (configuration.hasChanged()) {
             configuration.save();
         }
