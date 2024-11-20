@@ -14,9 +14,14 @@ public class EntityFishHookTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util.of(
-            this.getCorrectSymbol("func_70071_h_", "onUpdate"),
+            this.getCorrectSymbol("h", "onUpdate"),
             "()V",
-            "func_146035_c", // handleHookCasting ?
-            "(DDDFF)V");
+            this.getCorrectSymbol("c", "func_146035_c"), // handleHookCasting ?
+            "(DDDFF)V",
+            "<init>",
+            "(L" + this.getCorrectSymbol("ahb;", "net/minecraft/world/World;")
+                + "L"
+                + this.getCorrectSymbol("yz;", "net/minecraft/entity/player/EntityPlayer;")
+                + ")V");
     }
 }

@@ -7,8 +7,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import cpw.mods.fml.common.DummyModContainer;
-import cpw.mods.fml.common.ModMetadata;
 import net.minecraftforge.common.config.Configuration;
 
 import com.gtnewhorizon.gtnhmixins.IEarlyMixinLoader;
@@ -93,6 +91,8 @@ import com.midnight.engineeredition.coremod.asm.world.gen.feature.WorldGenMegaJu
 import com.midnight.engineeredition.coremod.asm.world.gen.feature.WorldGenMinableTransformer;
 import com.midnight.engineeredition.coremod.asm.world.gen.structure.MapGenStrongholdTransformer;
 
+import cpw.mods.fml.common.DummyModContainer;
+import cpw.mods.fml.common.ModMetadata;
 import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
 
 public class EngineerEditionCore extends DummyModContainer implements IEarlyMixinLoader, IFMLLoadingPlugin {
@@ -110,7 +110,6 @@ public class EngineerEditionCore extends DummyModContainer implements IEarlyMixi
         modMetadata.name = MODID;
         modMetadata.version = "0.0.2";
     }
-
 
     public EngineerEditionCore() {
         this(modMetadata);
@@ -136,12 +135,12 @@ public class EngineerEditionCore extends DummyModContainer implements IEarlyMixi
     public List<String> getMixins(Set<String> loadedCoremods) {
         List<String> mixins = new ArrayList<>();
         mixins.add("MixinMathHelper");
-//        mixins.add("MixinEntityArrow");
-//        mixins.add("MixinEntityFishHook");
+        // mixins.add("MixinEntityArrow");
+        // mixins.add("MixinEntityFishHook");
         mixins.add("MixinEntityItem");
         mixins.add("MixinEntityLivingBase");
         mixins.add("MixinEntityNoteFX");
-//        mixins.add("MixinEntityThrowable");
+        // mixins.add("MixinEntityThrowable");
         mixins.add("MixinEntityTNTPrimed");
         mixins.add("MixinModelBoat");
         mixins.add("MixinModelBook");

@@ -13,7 +13,6 @@ public class EntityChickenTransformer implements IAsmEditor {
 
     @Override
     public Map<String, String> getMethodInfo() {
-        return com.midnight.engineeredition.coremod.Util
-            .of(this.getCorrectSymbol("func_70043_V", "updateRiderPosition"), "()V");
+        return com.midnight.engineeredition.coremod.Util.of(this.getCorrectSymbol("ac", "updateRiderPosition"), "()V");
     }
 }

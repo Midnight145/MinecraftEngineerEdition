@@ -13,6 +13,6 @@ public class VillageSiegeTransformer implements IAsmEditor {
 
     @Override
     public Map<String, String> getMethodInfo() {
-        return com.midnight.engineeredition.coremod.Util.of("func_75529_b", "()Z");
+        return com.midnight.engineeredition.coremod.Util.of("b", "()Z");
     }
 }

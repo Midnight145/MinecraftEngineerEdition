@@ -13,7 +13,8 @@ public class ModelDragonTransformer implements IAsmEditor {
 
     @Override
     public Map<String, String> getMethodInfo() {
-        return com.midnight.engineeredition.coremod.Util
-            .of(this.getCorrectSymbol("func_78088_a", "render"), "(Lnet/minecraft/entity/Entity;FFFFFF)V");
+        return com.midnight.engineeredition.coremod.Util.of(
+            this.getCorrectSymbol("a", "render"),
+            "(L" + this.getCorrectSymbol("sa;", "net/minecraft/entity/Entity;") + "FFFFFF)V");
     }
 }

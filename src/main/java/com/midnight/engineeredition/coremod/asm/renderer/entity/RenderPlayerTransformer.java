@@ -14,7 +14,7 @@ public class RenderPlayerTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util.of(
-            this.getCorrectSymbol("func_77029_c", "renderEquippedItems"),
-            "(Lnet/minecraft/client/entity/AbstractClientPlayer;F)V");
+            this.getCorrectSymbol("a", "renderEquippedItems"),
+            "(L" + this.getCorrectSymbol("blg;", "net/minecraft/client/entity/AbstractClientPlayer;") + "F)V");
     }
 }

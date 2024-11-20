@@ -14,7 +14,7 @@ public class RenderZombieTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util.of(
-            this.getCorrectSymbol("func_77043_a", "rotateCorpse"),
-            "(Lnet/minecraft/entity/monster/EntityZombie;FFF)V");
+            this.getCorrectSymbol("a", "rotateCorpse"),
+            "(L" + this.getCorrectSymbol("yq;", "net/minecraft/entity/monster/EntityZombie;") + "FFF)V");
     }
 }

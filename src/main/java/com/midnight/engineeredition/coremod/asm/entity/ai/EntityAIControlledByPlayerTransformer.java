@@ -13,6 +13,6 @@ public class EntityAIControlledByPlayerTransformer implements IAsmEditor {
 
     @Override
     public Map<String, String> getMethodInfo() {
-        return com.midnight.engineeredition.coremod.Util.of(this.getCorrectSymbol("func_75246_d", "updateTask"), "()V");
+        return com.midnight.engineeredition.coremod.Util.of(this.getCorrectSymbol("e", "updateTask"), "()V");
     }
 }

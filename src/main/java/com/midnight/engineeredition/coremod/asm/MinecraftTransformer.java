@@ -11,7 +11,6 @@ public class MinecraftTransformer implements IAsmEditor {
 
     @Override
     public Map<String, String> getMethodInfo() {
-        return com.midnight.engineeredition.coremod.Util
-            .of(this.getCorrectSymbol("func_71366_a", "displayDebugInfo"), "(J)V");
+        return com.midnight.engineeredition.coremod.Util.of(this.getCorrectSymbol("a", "displayDebugInfo"), "(J)V");
     }
 }

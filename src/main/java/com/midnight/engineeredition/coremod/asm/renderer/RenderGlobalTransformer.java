@@ -14,11 +14,11 @@ public class RenderGlobalTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util.of(
-            this.getCorrectSymbol("func_72730_g", "renderStars"),
+            this.getCorrectSymbol("i", "renderStars"),
             "()V",
-            this.getCorrectSymbol("func_72714_a", "renderSky"),
+            this.getCorrectSymbol("a", "renderSky"),
             "(F)V",
-            this.getCorrectSymbol("func_72706_a", "playAuxSFX"),
-            "(Lnet/minecraft/entity/player/EntityPlayer;IIIII)V");
+            this.getCorrectSymbol("a", "playAuxSFX"),
+            "(L" + this.getCorrectSymbol("yz;", "net/minecraft/entity/player/EntityPlayer;") + "IIIII)V");
     }
 }

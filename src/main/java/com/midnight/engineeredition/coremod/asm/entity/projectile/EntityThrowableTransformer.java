@@ -14,11 +14,16 @@ public class EntityThrowableTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util.of(
-            this.getCorrectSymbol("func_70186_c", "setThrowableHeading"),
+            this.getCorrectSymbol("c", "setThrowableHeading"),
             "(DDDFF)V",
-            this.getCorrectSymbol("func_70016_h", "setVelocity"),
+            this.getCorrectSymbol("i", "setVelocity"),
             "(DDD)V",
-            this.getCorrectSymbol("func_70071_h_", "onUpdate"),
-            "()V");
+            this.getCorrectSymbol("h", "onUpdate"),
+            "()V",
+            "<init>",
+            "(L" + this.getCorrectSymbol("ahb;", "net/minecraft/world/World;")
+                + "L"
+                + this.getCorrectSymbol("sv;", "net/minecraft/entity/EntityLivingBase;")
+                + ")V");
     }
 }

@@ -18,12 +18,12 @@ public class WorldTransformer implements IAsmEditor {
             "(F)F",
             "getSunBrightnessBody",
             "(F)F",
-            "getSkyColorBody",
-            "(Lnet/minecraft/entity/Entity;F)Lnet/minecraft/util/Vec3",
-            this.getCorrectSymbol("func_72929_e", "getCelestialAngleRadians"),
+            // "getSkyColorBody",
+            // "(L"+this.getCorrectSymbol("sa;", "net/minecraft/entity/Entity;") + "F)Lnet/minecraft/util/Vec3",
+            this.getCorrectSymbol("d", "getCelestialAngleRadians"),
             "(F)F",
-            "drawCloudsBody",
-            "(F)Lnet/minecraft/util/Vec3",
+            // "drawCloudsBody",
+            // "(F)Lnet/minecraft/util/Vec3",
             "getStarBrightnessBody",
             "(F)F"
 

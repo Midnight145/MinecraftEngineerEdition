@@ -13,7 +13,6 @@ public class EntityLookIdleTransformer implements IAsmEditor {
 
     @Override
     public Map<String, String> getMethodInfo() {
-        return com.midnight.engineeredition.coremod.Util
-            .of(this.getCorrectSymbol("func_75249_e", "startExecuting"), "()V");
+        return com.midnight.engineeredition.coremod.Util.of(this.getCorrectSymbol("c", "startExecuting"), "()V");
     }
 }

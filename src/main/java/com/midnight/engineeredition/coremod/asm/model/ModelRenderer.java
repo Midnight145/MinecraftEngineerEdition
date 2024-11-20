@@ -9,11 +9,11 @@ public class ModelRenderer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util.of(
-            this.getCorrectSymbol("func_78088_a", "render"),
-            "(Lnet/minecraft/entity/Entity;FFFFFF)V",
-            this.getCorrectSymbol("func_78791_b", "renderWithRotation"),
+            this.getCorrectSymbol("a", "render"),
+            "(L" + this.getCorrectSymbol("sa;", "net/minecraft/entity/Entity;") + "FFFFFF)V",
+            this.getCorrectSymbol("b", "renderWithRotation"),
             "(F)V",
-            this.getCorrectSymbol("func_78794_c", "postRender"),
+            this.getCorrectSymbol("c", "postRender"),
             "(F)V");
     }
 

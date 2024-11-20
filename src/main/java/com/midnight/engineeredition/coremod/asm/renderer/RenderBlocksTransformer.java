@@ -14,13 +14,13 @@ public class RenderBlocksTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util.of(
-            this.getCorrectSymbol("func_147741_a", "renderBlockBrewingStand"),
-            "(Lnet/minecraft/block/BlockBrewingStand;III)Z",
-            this.getCorrectSymbol("func_147790_e", "renderBlockLever"),
-            "(Lnet/minecraft/block/Block;III)Z",
-            this.getCorrectSymbol("func_147723_f", "renderBlockTripWireSource"),
-            "(Lnet/minecraft/block/Block;III)Z",
-            this.getCorrectSymbol("func_147774_a", "renderBlockDoublePlant"),
-            "(Lnet/minecraft/block/BlockDoublePlant;III)Z");
+            this.getCorrectSymbol("a", "renderBlockBrewingStand"),
+            "(L" + this.getCorrectSymbol("ajq;", "net/minecraft/block/BlockBrewingStand;") + "III)Z",
+            this.getCorrectSymbol("e", "renderBlockLever"),
+            "(L" + this.getCorrectSymbol("aji;", "net/minecraft/block/Block;") + "III)Z",
+            this.getCorrectSymbol("f", "renderBlockTripWireSource"),
+            "(L" + this.getCorrectSymbol("aji;", "net/minecraft/block/Block;") + "III)Z",
+            this.getCorrectSymbol("a", "renderBlockDoublePlant"),
+            "(L" + this.getCorrectSymbol("ako;", "net/minecraft/block/BlockDoublePlant;") + "III)Z");
     }
 }

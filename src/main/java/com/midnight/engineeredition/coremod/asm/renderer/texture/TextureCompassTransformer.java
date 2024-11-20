@@ -13,7 +13,8 @@ public class TextureCompassTransformer implements IAsmEditor {
 
     @Override
     public Map<String, String> getMethodInfo() {
-        return com.midnight.engineeredition.coremod.Util
-            .of(this.getCorrectSymbol("func_94241_a", "updateCompass"), "(Lnet/minecraft/world/World;DDDZZ)V");
+        return com.midnight.engineeredition.coremod.Util.of(
+            this.getCorrectSymbol("a", "updateCompass"),
+            "(L" + this.getCorrectSymbol("ahb;", "net/minecraft/world/World;") + "DDDZZ)V");
     }
 }

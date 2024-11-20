@@ -14,6 +14,6 @@ public class ChunkProviderHellTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util
-            .of(this.getCorrectSymbol("func_73164_a", "initializeNoiseField"), "([DIIIIII)[D");
+            .of(this.getCorrectSymbol("a", "initializeNoiseField"), "([DIIIIII)[D");
     }
 }

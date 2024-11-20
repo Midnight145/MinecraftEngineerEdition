@@ -14,9 +14,9 @@ public class EntitySquidTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util.of(
-            this.getCorrectSymbol("func_70636_d", "onLivingUpdate"),
+            this.getCorrectSymbol("e", "onLivingUpdate"),
             "()V",
-            this.getCorrectSymbol("func_70626_be", "updateEntityActionState"),
+            this.getCorrectSymbol("bq", "updateEntityActionState"),
             "()V");
     }
 }

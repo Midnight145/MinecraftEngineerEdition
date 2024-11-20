@@ -14,7 +14,7 @@ public class RendererLivingEntityTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util.of(
-            this.getCorrectSymbol("func_85093_e", "renderArrowsStuckInEntity"),
-            "(Lnet/minecraft/entity/EntityLivingBase;F)V");
+            this.getCorrectSymbol("e", "renderArrowsStuckInEntity"),
+            "(L" + this.getCorrectSymbol("sv;", "net/minecraft/entity/EntityLivingBase;") + "F)V");
     }
 }

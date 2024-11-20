@@ -12,7 +12,10 @@ public class BlockFluidBaseTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util.of(
-            this.getCorrectSymbol("func_149802_a", "getFlowDirection"),
-            "(Lnet/minecraft/world/IBlockAccess;IIILnet/minecraft/block/material/Material;)D");
+            this.getCorrectSymbol("a", "getFlowDirection"),
+            "(L" + this.getCorrectSymbol("ahl;", "net/minecraft/world/IBlockAccess;")
+                + "IIIL"
+                + this.getCorrectSymbol("awt;", "net/minecraft/block/material/Material;")
+                + ")D");
     }
 }

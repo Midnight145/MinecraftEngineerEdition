@@ -13,10 +13,7 @@ public class EntityEnderEyeTransformer implements IAsmEditor {
 
     @Override
     public Map<String, String> getMethodInfo() {
-        return com.midnight.engineeredition.coremod.Util.of(
-            this.getCorrectSymbol("func_70071_h_", "onUpdate"),
-            "()V",
-            this.getCorrectSymbol("func_70016_h", "setVelocity"),
-            "(DDD)V");
+        return com.midnight.engineeredition.coremod.Util
+            .of(this.getCorrectSymbol("h", "onUpdate"), "()V", this.getCorrectSymbol("i", "setVelocity"), "(DDD)V");
     }
 }

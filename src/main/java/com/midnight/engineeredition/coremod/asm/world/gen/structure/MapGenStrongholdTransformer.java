@@ -14,6 +14,6 @@ public class MapGenStrongholdTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util
-            .of(this.getCorrectSymbol("func_75047_a", "canSpawnStructureAtCoords"), "(II)Z");
+            .of(this.getCorrectSymbol("a", "canSpawnStructureAtCoords"), "(II)Z");
     }
 }

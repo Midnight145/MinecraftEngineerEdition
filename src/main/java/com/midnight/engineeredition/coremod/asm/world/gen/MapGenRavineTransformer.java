@@ -14,9 +14,12 @@ public class MapGenRavineTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util.of(
-            "func_151540_a",
-            "(JII[Lnet/minecraft/block/Block;DDDFFFIID)V",
-            "func_151538_a",
-            "(Lnet/minecraft/world/World;IIII[Lnet/minecraft/block/Block;)V");
+            this.getCorrectSymbol("a", "func_151540_a"),
+            "(JII[L" + this.getCorrectSymbol("aji;", "net/minecraft/block/Block;") + "DDDFFFIID)V",
+            this.getCorrectSymbol("a", "func_151538_a"),
+            "(L" + this.getCorrectSymbol("ahb;", "net/minecraft/world/World;")
+                + "IIII[L"
+                + this.getCorrectSymbol("aji;", "net/minecraft/block/Block;")
+                + ")V");
     }
 }

@@ -14,7 +14,7 @@ public class ActiveRendererInfoTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util.of(
-            this.getCorrectSymbol("func_74583_a", "updateRenderInfo"),
-            "(Lnet/minecraft/entity/player/EntityPlayer;Z)V");
+            this.getCorrectSymbol("a", "updateRenderInfo"),
+            "(L" + this.getCorrectSymbol("yz;", "net/minecraft/entity/player/EntityPlayer;") + "Z)V");
     }
 }

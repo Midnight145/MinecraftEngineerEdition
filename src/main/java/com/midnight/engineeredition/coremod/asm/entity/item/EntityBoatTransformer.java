@@ -14,9 +14,9 @@ public class EntityBoatTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util.of(
-            this.getCorrectSymbol("func_70071_h_", "onUpdate"),
+            this.getCorrectSymbol("h", "onUpdate"),
             "()V",
-            this.getCorrectSymbol("func_70043_V", "updateRiderPosition"),
+            this.getCorrectSymbol("ac", "updateRiderPosition"),
             "()V");
     }
 }

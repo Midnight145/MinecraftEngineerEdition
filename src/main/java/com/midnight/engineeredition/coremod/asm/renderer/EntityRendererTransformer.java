@@ -9,14 +9,14 @@ public class EntityRendererTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util.of(
-            this.getCorrectSymbol("func_78482_e", "hurtCameraEffect"),
+            this.getCorrectSymbol("f", "hurtCameraEffect"),
             "(F)V",
-            this.getCorrectSymbol("func_78475_f", "setupViewBobbing"),
+            this.getCorrectSymbol("g", "setupViewBobbing"),
             "(F)V",
-            this.getCorrectSymbol("func_78467_g", "orientCamera"),
+            this.getCorrectSymbol("h", "orientCamera"),
             "(F)V",
-            this.getCorrectSymbol("func_82830_a", "getNightVisionBrightness"),
-            "(Lnet/minecraft/entity/player/EntityPlayer;F)F");
+            this.getCorrectSymbol("a", "getNightVisionBrightness"),
+            "(L" + this.getCorrectSymbol("yz;", "net/minecraft/entity/player/EntityPlayer;") + "F)F");
     }
 
     @Override

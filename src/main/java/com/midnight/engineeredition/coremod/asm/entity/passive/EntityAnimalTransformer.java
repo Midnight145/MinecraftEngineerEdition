@@ -13,7 +13,8 @@ public class EntityAnimalTransformer implements IAsmEditor {
 
     @Override
     public Map<String, String> getMethodInfo() {
-        return com.midnight.engineeredition.coremod.Util
-            .of(this.getCorrectSymbol("func_70785_a", "attackEntity"), "(Lnet/minecraft/entity/Entity;F)V");
+        return com.midnight.engineeredition.coremod.Util.of(
+            this.getCorrectSymbol("a", "attackEntity"),
+            "(L" + this.getCorrectSymbol("sa;", "net/minecraft/entity/Entity;") + "F)V");
     }
 }

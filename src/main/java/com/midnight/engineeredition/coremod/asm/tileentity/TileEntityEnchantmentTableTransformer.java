@@ -13,7 +13,6 @@ public class TileEntityEnchantmentTableTransformer implements IAsmEditor {
 
     @Override
     public Map<String, String> getMethodInfo() {
-        return com.midnight.engineeredition.coremod.Util
-            .of(this.getCorrectSymbol("func_145845_h", "updateEntity"), "()V");
+        return com.midnight.engineeredition.coremod.Util.of(this.getCorrectSymbol("h", "updateEntity"), "()V");
     }
 }

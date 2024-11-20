@@ -14,11 +14,11 @@ public class WorldProviderTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util.of(
-            this.getCorrectSymbol("func_76560_a", "calcSunriseSunsetColors"),
+            this.getCorrectSymbol("a", "calcSunriseSunsetColors"),
             "(FF)[F",
-            this.getCorrectSymbol("func_76563_a", "calculateCelestialAngle"),
+            this.getCorrectSymbol("a", "calculateCelestialAngle"),
             "(JF)F",
-            this.getCorrectSymbol("func_76562_b", "getFogColor"),
-            "(FF)Lnet/minecraft/util/Vec3;");
+            this.getCorrectSymbol("b", "getFogColor"),
+            "(FF)L" + this.getCorrectSymbol("azw;", "net/minecraft/util/Vec3;") + "");
     }
 }

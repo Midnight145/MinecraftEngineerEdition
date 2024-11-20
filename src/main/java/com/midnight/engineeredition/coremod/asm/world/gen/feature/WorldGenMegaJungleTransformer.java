@@ -14,7 +14,7 @@ public class WorldGenMegaJungleTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util.of(
-            this.getCorrectSymbol("func_76484_a", "generate"),
-            "(Lnet/minecraft/world/World;Ljava/util/Random;III)Z");
+            this.getCorrectSymbol("a", "generate"),
+            "(L" + this.getCorrectSymbol("ahb;", "net/minecraft/world/World;") + "Ljava/util/Random;III)Z");
     }
 }

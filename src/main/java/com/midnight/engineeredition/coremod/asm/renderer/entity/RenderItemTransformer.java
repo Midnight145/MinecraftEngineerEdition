@@ -14,9 +14,12 @@ public class RenderItemTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util.of(
-            this.getCorrectSymbol("func_76986_a", "doRender"),
-            "(Lnet/minecraft/entity/item/EntityItem;DDDFF)V",
-            this.getCorrectSymbol("func_77020_a", "renderDroppedItem"),
-            "(Lnet/minecraft/entity/item/EntityItem;Lnet/minecraft/util/IIcon;IFFFF)V");
+            this.getCorrectSymbol("a", "doRender"),
+            "(L" + this.getCorrectSymbol("xk;", "net/minecraft/entity/item/EntityItem;") + "DDDFF)V",
+            this.getCorrectSymbol("a", "renderDroppedItem"),
+            "(L" + this.getCorrectSymbol("xk;", "net/minecraft/entity/item/EntityItem;")
+                + "L"
+                + this.getCorrectSymbol("rf;", "net/minecraft/util/IIcon;")
+                + "IFFFF)V");
     }
 }

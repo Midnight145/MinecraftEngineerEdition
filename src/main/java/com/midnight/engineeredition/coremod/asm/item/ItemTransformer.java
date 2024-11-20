@@ -14,7 +14,12 @@ public class ItemTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util.of(
-            this.getCorrectSymbol("func_77621_a", "getMovingObjectPositionFromPlayer"),
-            "(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Z)Lnet/minecraft/util/MovingObjectPosition;");
+            this.getCorrectSymbol("a", "getMovingObjectPositionFromPlayer"),
+            "(L" + this.getCorrectSymbol("ahb;", "net/minecraft/world/World;")
+                + "L"
+                + this.getCorrectSymbol("yz;", "net/minecraft/entity/player/EntityPlayer;")
+                + "Z)L"
+                + this.getCorrectSymbol("azu;", "net/minecraft/util/MovingObjectPosition;")
+                + "");
     }
 }

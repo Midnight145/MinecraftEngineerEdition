@@ -8,15 +8,15 @@ public class EntityHorseTransformer implements IAsmEditor {
 
     @Override
     public String getClassName() {
-        return "net.minecraft.entity.passive.EntityChicken";
+        return "net.minecraft.entity.passive.EntityHorse";
     }
 
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util.of(
-            this.getCorrectSymbol("func_70043_V", "updateRiderPosition"),
+            this.getCorrectSymbol("ac", "updateRiderPosition"),
             "()V",
-            this.getCorrectSymbol("func_70612_e", "moveEntityWithHeading"),
+            this.getCorrectSymbol("e", "moveEntityWithHeading"),
             "(FF)V");
     }
 }

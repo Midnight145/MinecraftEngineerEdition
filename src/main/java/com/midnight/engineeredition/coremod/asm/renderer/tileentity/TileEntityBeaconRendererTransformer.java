@@ -14,7 +14,7 @@ public class TileEntityBeaconRendererTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util.of(
-            this.getCorrectSymbol("func_147500_a", "renderTileEntityAt"),
-            "(Lnet/minecraft/tileentity/TileEntityBeacon;DDDF)V");
+            this.getCorrectSymbol("a", "renderTileEntityAt"),
+            "(L" + this.getCorrectSymbol("aoq;", "net/minecraft/tileentity/TileEntityBeacon;") + "DDDF)V");
     }
 }

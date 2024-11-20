@@ -14,6 +14,6 @@ public class EntityFireworkStarterFXTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util
-            .of(this.getCorrectSymbol("func_92038_a", "createShaped"), "(D[[D[I[IZZZ)V");
+            .of(this.getCorrectSymbol("a", "createShaped"), "(D[[D[I[IZZZ)V");
     }
 }

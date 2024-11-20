@@ -14,6 +14,6 @@ public class EntityCreatureTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util
-            .of(this.getCorrectSymbol("func_70626_be", "updateEntityActionState"), "()V");
+            .of(this.getCorrectSymbol("bq", "updateEntityActionState"), "()V");
     }
 }

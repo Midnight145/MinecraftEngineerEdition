@@ -14,7 +14,7 @@ public class EntitySheepTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util.of(
-            "func_70890_k", // getHeadRotationAngleX ?
+            this.getCorrectSymbol("q", "func_70890_k"), // getHeadRotationAngleX ?
             "(F)F");
     }
 }

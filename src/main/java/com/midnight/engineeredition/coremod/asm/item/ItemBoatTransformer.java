@@ -14,7 +14,14 @@ public class ItemBoatTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util.of(
-            this.getCorrectSymbol("func_77659_a", "onItemRightClick"),
-            "(Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;)Lnet/minecraft/item/ItemStack;");
+            this.getCorrectSymbol("a", "onItemRightClick"),
+            "(L" + this.getCorrectSymbol("add;", "net/minecraft/item/ItemStack;")
+                + "L"
+                + this.getCorrectSymbol("ahb;", "net/minecraft/world/World;")
+                + "L"
+                + this.getCorrectSymbol("yz;", "net/minecraft/entity/player/EntityPlayer;")
+                + ")L"
+                + this.getCorrectSymbol("add;", "net/minecraft/item/ItemStack;")
+                + "");
     }
 }

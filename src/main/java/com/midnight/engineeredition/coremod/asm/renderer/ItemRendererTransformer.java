@@ -14,6 +14,6 @@ public class ItemRendererTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util
-            .of(this.getCorrectSymbol("func_78440_a", "renderItemInFirstPerson"), "(F)V");
+            .of(this.getCorrectSymbol("a", "renderItemInFirstPerson"), "(F)V");
     }
 }

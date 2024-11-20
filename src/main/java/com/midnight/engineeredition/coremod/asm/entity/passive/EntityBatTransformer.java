@@ -13,7 +13,6 @@ public class EntityBatTransformer implements IAsmEditor {
 
     @Override
     public Map<String, String> getMethodInfo() {
-        return com.midnight.engineeredition.coremod.Util
-            .of(this.getCorrectSymbol("func_70619_bc", "updateAITasks"), "()V");
+        return com.midnight.engineeredition.coremod.Util.of(this.getCorrectSymbol("bn", "updateAITasks"), "()V");
     }
 }

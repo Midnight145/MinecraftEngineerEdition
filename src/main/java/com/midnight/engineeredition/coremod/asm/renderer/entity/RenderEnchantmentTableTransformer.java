@@ -14,7 +14,7 @@ public class RenderEnchantmentTableTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util.of(
-            this.getCorrectSymbol("func_147500_a", "renderTileEntityAt"),
-            "(Lnet/minecraft/tileentity/TileEntityEnchantmentTable;DDDF)V");
+            this.getCorrectSymbol("a", "renderTileEntityAt"),
+            "(L" + this.getCorrectSymbol("apd;", "net/minecraft/tileentity/TileEntityEnchantmentTable;") + "DDDF)V");
     }
 }

@@ -14,11 +14,11 @@ public class EntityMinecartTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util.of(
-            this.getCorrectSymbol("func_70071_h_", "onUpdate"),
+            this.getCorrectSymbol("h", "onUpdate"),
             "()V",
-            "func_145821_a",
-            "(IIIDDLnet/minecraft/block/Block;I)V",
-            this.getCorrectSymbol("func_70108_f", "applyEntityCollision"),
-            "(Lnet/minecraft/entity/Entity;)V");
+            this.getCorrectSymbol("a", "func_145821_a"),
+            "(IIIDDL" + this.getCorrectSymbol("aji;", "net/minecraft/block/Block;") + "I)V",
+            this.getCorrectSymbol("g", "applyEntityCollision"),
+            "(L" + this.getCorrectSymbol("sa;", "net/minecraft/entity/Entity;") + ")V");
     }
 }

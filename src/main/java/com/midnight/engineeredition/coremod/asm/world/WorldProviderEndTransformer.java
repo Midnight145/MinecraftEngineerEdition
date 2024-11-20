@@ -13,7 +13,8 @@ public class WorldProviderEndTransformer implements IAsmEditor {
 
     @Override
     public Map<String, String> getMethodInfo() {
-        return com.midnight.engineeredition.coremod.Util
-            .of(this.getCorrectSymbol("func_76562_b", "getFogColor"), "(FF)Lnet/minecraft/util/Vec3;");
+        return com.midnight.engineeredition.coremod.Util.of(
+            this.getCorrectSymbol("b", "getFogColor"),
+            "(FF)L" + this.getCorrectSymbol("azw;", "net/minecraft/util/Vec3;") + "");
     }
 }

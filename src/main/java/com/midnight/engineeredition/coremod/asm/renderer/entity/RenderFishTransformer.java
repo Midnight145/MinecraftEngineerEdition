@@ -14,7 +14,7 @@ public class RenderFishTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util.of(
-            this.getCorrectSymbol("func_76986_a", "doRender"),
-            "(Lnet/minecraft/entity/projectile/EntityFishHook;DDDFF)V");
+            this.getCorrectSymbol("a", "doRender"),
+            "(L" + this.getCorrectSymbol("xe;", "net/minecraft/entity/projectile/EntityFishHook;") + "DDDFF)V");
     }
 }

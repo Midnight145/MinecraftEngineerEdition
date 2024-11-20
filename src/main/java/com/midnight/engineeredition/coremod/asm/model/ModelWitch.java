@@ -13,7 +13,8 @@ public class ModelWitch implements IAsmEditor {
 
     @Override
     public Map<String, String> getMethodInfo() {
-        return com.midnight.engineeredition.coremod.Util
-            .of(this.getCorrectSymbol("func_78087_a", "setRotationAngles"), "(FFFFFFLnet/minecraft/entity/Entity;)V");
+        return com.midnight.engineeredition.coremod.Util.of(
+            this.getCorrectSymbol("a", "setRotationAngles"),
+            "(FFFFFFL" + this.getCorrectSymbol("sa;", "net/minecraft/entity/Entity;") + ")V");
     }
 }

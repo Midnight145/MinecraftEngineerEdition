@@ -11,7 +11,6 @@ public class GuiMainMenuTransformer implements IAsmEditor {
 
     @Override
     public Map<String, String> getMethodInfo() {
-        return com.midnight.engineeredition.coremod.Util
-            .of(this.getCorrectSymbol("func_73863_a", "drawScreen"), "(IIF)V");
+        return com.midnight.engineeredition.coremod.Util.of(this.getCorrectSymbol("a", "drawScreen"), "(IIF)V");
     }
 }

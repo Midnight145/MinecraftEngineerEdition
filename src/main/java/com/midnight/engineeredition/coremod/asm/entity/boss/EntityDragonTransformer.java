@@ -14,9 +14,12 @@ public class EntityDragonTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util.of(
-            this.getCorrectSymbol("func_70636_d", "onLivingUpdate"),
+            this.getCorrectSymbol("e", "onLivingUpdate"),
             "()V",
-            this.getCorrectSymbol("func_70965_a", "attackEntityFromPart"),
-            "(Lnet/minecraft/entity/boss/EntityDragonPart;Lnet/minecraft/util/DamageSource;F)Z");
+            this.getCorrectSymbol("a", "attackEntityFromPart"),
+            "(L" + this.getCorrectSymbol("wy;", "net/minecraft/entity/boss/EntityDragonPart;")
+                + "L"
+                + this.getCorrectSymbol("ro;", this.getCorrectSymbol("ro;", "net/minecraft/util/DamageSource;"))
+                + "F)Z");
     }
 }

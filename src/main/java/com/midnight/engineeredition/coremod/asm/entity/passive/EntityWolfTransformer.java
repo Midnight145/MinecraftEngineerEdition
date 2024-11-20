@@ -14,13 +14,13 @@ public class EntityWolfTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util.of(
-            this.getCorrectSymbol("func_70071_h_", "onUpdate"),
+            this.getCorrectSymbol("h", "onUpdate"),
             "()V",
-            this.getCorrectSymbol("func_70923_f", "getShakeAngle"),
+            this.getCorrectSymbol("g", "getShakeAngle"),
             "(FF)F",
-            this.getCorrectSymbol("func_70917_k", "getInterestedAngle"),
+            this.getCorrectSymbol("q", "getInterestedAngle"),
             "(F)F",
-            this.getCorrectSymbol("func_70920_v", "getTailRotation"),
+            this.getCorrectSymbol("ch", "getTailRotation"),
             "()F");
     }
 }

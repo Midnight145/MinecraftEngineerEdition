@@ -13,7 +13,6 @@ public class EntityMoveHelperTransformer implements IAsmEditor {
 
     @Override
     public Map<String, String> getMethodInfo() {
-        return com.midnight.engineeredition.coremod.Util
-            .of(this.getCorrectSymbol("func_75641_c", "onUpdateMoveHelper"), "()V");
+        return com.midnight.engineeredition.coremod.Util.of(this.getCorrectSymbol("c", "onUpdateMoveHelper"), "()V");
     }
 }

@@ -14,7 +14,7 @@ public class EntityFireworkOverlayFXTransformer implements IAsmEditor {
     @Override
     public Map<String, String> getMethodInfo() {
         return com.midnight.engineeredition.coremod.Util.of(
-            this.getCorrectSymbol("func_70539_a", "renderParticle"),
-            "(Lnet/minecraft/client/renderer/Tessellator;FFFFFF)V");
+            this.getCorrectSymbol("a", "renderParticle"),
+            "(L" + this.getCorrectSymbol("bmh;", "net/minecraft/client/renderer/Tessellator;") + "FFFFFF)V");
     }
 }
