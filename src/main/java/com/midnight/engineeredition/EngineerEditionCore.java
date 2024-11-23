@@ -22,19 +22,36 @@ public class EngineerEditionCore extends DummyModContainer implements IFMLLoadin
     public static Logger logger = LogManager.getLogger(EngineerEditionCore.MODID);
 
     private static final ModMetadata modMetadata = new ModMetadata();
+    private static boolean isEnabled;
 
     static {
         modMetadata.modId = MODID;
         modMetadata.name = MODID;
-        modMetadata.version = "0.0.2";
+        modMetadata.version = "0.0.4";
     }
 
+    @SuppressWarnings("unused")
     public EngineerEditionCore() {
         this(modMetadata);
         String path = Paths.get("config", EngineerEditionCore.MODID + ".cfg")
             .toString();
         Configuration configuration = new Configuration(new File(path));
-        PI = configuration.getFloat("PI", "main", 3.0f, -Float.MAX_VALUE, Float.MAX_VALUE, "");
+        isEnabled = configuration.getBoolean("isEnabled", "main", true, "Global toggle for the mod");
+        PI = configuration.getFloat(
+            "PI",
+            "main",
+            3.0f,
+            -Float.MAX_VALUE,
+            Float.MAX_VALUE,
+            "If <= 0 and allowBreakingValues is off, will default to Math.PI");
+        boolean allowBreakingValues = configuration.getBoolean(
+            "allowBreakingValues",
+            "main",
+            false,
+            "Allows for PI <= 0. This will likely just hang at the main menu.");
+        if (!allowBreakingValues && PI <= 0f) {
+            isEnabled = false;
+        }
         if (configuration.hasChanged()) {
             configuration.save();
         }
@@ -46,7 +63,7 @@ public class EngineerEditionCore extends DummyModContainer implements IFMLLoadin
 
     @Override
     public String[] getASMTransformerClass() {
-        return new String[] { "com.midnight.engineeredition.EngineerEditionClassTransformer" };
+        return isEnabled ? new String[] { "com.midnight.engineeredition.EngineerEditionClassTransformer" } : null;
     }
 
     @Override
